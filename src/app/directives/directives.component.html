@@ -1,0 +1,5 @@
+<button type="button" class="btn btn-success" (click)="toggleParagraph()">Display Details!</button>
+
+<p *ngIf="showPassword">Secret password = Abcd@12345676543</p>
+
+<p>Your clicks are recorded! = <span *ngFor = "let click of clicks" [ngStyle]="{color : click >= 5 ? 'green' : 'black'}" ngClass="{future : click >= 5}">{{click}},</span></p>
